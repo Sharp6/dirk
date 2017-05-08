@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Web dictaphone</title>
+    <title>Felix Recorder</title>
   </head>
   <body>
 
     <div class="wrapper">
 
       <header>
-        <h1>Web dictaphone</h1>
+        <h1>Felix Recorder</h1>
       </header>
 
       <section class="main-controls">
@@ -20,22 +20,20 @@
         </div>
       </section>
 
-      <section class="sound-clips">
+      <section class="sound-clip">
 
-        <!-- This is left here as a helper for testing the style of the clips
-        If you want to edit their appearance without having to record clips,
-        uncomment this and reload the page. Remember to comment it again when done!
         <article class="clip">
-          <audio controls></audio>
+          <audio controls class="audio"></audio>
           <p>Sample clip name</p>
-          <button class="delete">Delete</button>
         </article>
-        -->
-        
+
       </section>
     </div>
 
     <!-- Below is your custom application script -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="fbClient.js"></script>
+    <script src="recorder.js"></script>
     <script src="index.js"></script>
 
   </body>
